@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <artifactId>cloud-engine-parent</artifactId>
+        <groupId>org.example.parent</groupId>
+        <version>1.0.0</version>
+        <relativePath>../cloud-engine-parent</relativePath>
+    </parent>
+    <modules>
+        <module>gateway-bootstrap</module>
+        <module>gateway-common</module>
+        <module>gateway-auth</module>
+    </modules>
+
+    <groupId>org.example.gateway</groupId>
+    <artifactId>cloud-engine-gateway</artifactId>
+    <version>1.0.0</version>
+    <packaging>pom</packaging>
+    <name>cloud-engine-gateway</name>
+    <properties>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.example.common.core</groupId>
+            <artifactId>common-core</artifactId>
+            <version>1.0.0</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-web</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+    </dependencies>
+
+
+</project>

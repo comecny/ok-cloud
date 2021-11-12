@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.example.common</groupId>
+    <artifactId>cloud-engine-common</artifactId>
+    <version>1.0.0</version>
+    <packaging>pom</packaging>
+    <name>cloud-engine-common</name>
+
+    <modules>
+        <module>common-redis</module>
+        <module>common-es</module>
+        <module>common-mq</module>
+        <module>common-core</module>
+        <module>common-db</module>
+        <module>common-remote</module>
+    </modules>
+
+    <build>
+        <plugins>
+        </plugins>
+    </build>
+
+</project>

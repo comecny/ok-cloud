@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans
+                        http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--
+        公共资源配置文件
+     -->
+    <!-- id生成器 -->
+    <import resource="classpath:/META-INF/idFactory.xml" />
+
+    <!-- 参数校验配置 -->
+    <import resource="classpath:/META-INF/auth.xml" />
+</beans>

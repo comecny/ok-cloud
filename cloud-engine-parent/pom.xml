@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!--存放所有的版本信息-->
+    <groupId>org.example.parent</groupId>
+    <artifactId>cloud-engine-parent</artifactId>
+    <version>1.0.0</version>
+    <packaging>pom</packaging>
+    <name>cloud-engine-parent</name>
+
+    <properties>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+        <java.version>11</java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <maven.compiler.encoding>UTF-8</maven.compiler.encoding>
+
+        <spring-boot.version>2.3.2.RELEASE</spring-boot.version>
+        <spring-cloud-alibaba.version>2.2.4.RELEASE</spring-cloud-alibaba.version>
+        <spring-cloud.version>2.2.5.RELEASE</spring-cloud.version>
+        <druid-spring.version>1.2.6</druid-spring.version>
+        <spring-kafka.version>2.7.1</spring-kafka.version>
+        <guava.version>30.1-jre</guava.version>
+        <httpclient.version>4.5.13</httpclient.version>
+        <okhttp.version>3.14.9</okhttp.version>
+        <netty-all.version>4.1.31.Final</netty-all.version>
+        <joda-time.version>2.10.10</joda-time.version>
+        <commons-lang3.version>3.10</commons-lang3.version>
+        <javassist.version>3.28.0-GA</javassist.version>
+        <mysql-connector.version>8.0.23</mysql-connector.version>
+        <elasticsearch.version>7.4.0</elasticsearch.version>
+    </properties>
+
+
+</project>
