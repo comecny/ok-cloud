@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.ImportResource;
 
+
 @ImportResource("classpath:/META-INF/cloud-config.xml")
 @SpringBootApplication
 public class GatewayApplication {
@@ -19,4 +20,5 @@ public class GatewayApplication {
         applicationContext = SpringApplication.run(GatewayApplication.class, args);
         logger.info("started up Gateway ");
     }
+
 }

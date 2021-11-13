@@ -20,8 +20,8 @@ public class BeanUtils {
 
     public static final String PROPERTY_NAME = "context.key.lowercase";
     public static boolean LOWERCASE = false;
-    private static String DATEFORMAT = "yyyy-MM-dd";
-    private static String TIMEFORMAT = "yyyy-MM-dd hh:mm:ss.S";
+    private static String REFORMAT = "yyyy-MM-dd";
+    private static String TIMEFRAME = "yyyy-MM-dd hh:mm:ss.S";
     private static ConcurrentHashMap customEditors = new ConcurrentHashMap();
 
     static {
@@ -301,7 +301,7 @@ public class BeanUtils {
                 long mills = Long.parseLong(str);
                 return new Date(mills);
             } catch (NumberFormatException var5) {
-                SimpleDateFormat sdf = new SimpleDateFormat(DATEFORMAT);
+                SimpleDateFormat sdf = new SimpleDateFormat(REFORMAT);
 
                 try {
                     return new Date(sdf.parse(str).getTime());
@@ -332,7 +332,7 @@ public class BeanUtils {
                 long mills = Long.parseLong(str);
                 return new Timestamp(mills);
             } catch (NumberFormatException var5) {
-                SimpleDateFormat sdf = new SimpleDateFormat(TIMEFORMAT);
+                SimpleDateFormat sdf = new SimpleDateFormat(TIMEFRAME);
 
                 try {
                     return new Timestamp(sdf.parse(str).getTime());
@@ -363,7 +363,7 @@ public class BeanUtils {
                 long mills = Long.parseLong(str);
                 return new java.sql.Date(mills);
             } catch (NumberFormatException var5) {
-                SimpleDateFormat sdf = new SimpleDateFormat(DATEFORMAT);
+                SimpleDateFormat sdf = new SimpleDateFormat(REFORMAT);
 
                 try {
                     return new java.sql.Date(sdf.parse(str).getTime());
@@ -394,7 +394,7 @@ public class BeanUtils {
                 long mills = Long.parseLong(str);
                 return new Time(mills);
             } catch (NumberFormatException var5) {
-                SimpleDateFormat sdf = new SimpleDateFormat(TIMEFORMAT);
+                SimpleDateFormat sdf = new SimpleDateFormat(TIMEFRAME);
 
                 try {
                     return new Time(sdf.parse(str).getTime());

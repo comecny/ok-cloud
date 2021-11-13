@@ -11,8 +11,6 @@ import reactor.core.publisher.Mono;
 
 /**
  * 参数校验拦截器
- *
- *
  */
 @Component
 public class ParamFilter implements GlobalFilter, Ordered {
@@ -23,7 +21,7 @@ public class ParamFilter implements GlobalFilter, Ordered {
     public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
 
         /**
-         * 1、拉去接口参数，判断参数规则，是否为空以及枚举值校验
+         * 网关参数校验，初步想法 -> osgi
          */
         logger.info("param filter started ");
         return chain.filter(exchange);
