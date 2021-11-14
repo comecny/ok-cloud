@@ -5,10 +5,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <artifactId>cloud-parent</artifactId>
+        <artifactId>cloud-engine-parent</artifactId>
         <groupId>org.example.parent</groupId>
         <version>1.0.0</version>
-        <relativePath>../../cloud-parent</relativePath>
+        <relativePath>../../cloud-engine-parent</relativePath>
     </parent>
 
     <groupId>com.example.common.mq</groupId>

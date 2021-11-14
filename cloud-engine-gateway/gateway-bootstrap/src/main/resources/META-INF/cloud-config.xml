@@ -9,6 +9,4 @@
     <!-- id生成器 -->
     <import resource="classpath:/META-INF/idFactory.xml" />
 
-    <!-- 参数校验配置 -->
-    <import resource="classpath:/META-INF/auth.xml" />
 </beans>

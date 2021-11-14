@@ -152,19 +152,19 @@
         <dependency>
             <groupId>org.netbeans.external</groupId>
             <artifactId>com-jcraft-jsch</artifactId>
-            <version>RELEASE123</version>
+            <version>${jsch.version}</version>
         </dependency>
 
         <dependency>
             <groupId>commons-net</groupId>
             <artifactId>commons-net</artifactId>
-            <version>3.8.0</version>
+            <version>${commons-net.version}</version>
         </dependency>
 
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.20</version>
+            <version>${lombok.version}</version>
         </dependency>
 
         <dependency>
@@ -172,5 +172,12 @@
             <artifactId>commons-pool2</artifactId>
             <version>2.11.1</version>
         </dependency>
+
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.11.1</version>
+        </dependency>
+
     </dependencies>
 </project>

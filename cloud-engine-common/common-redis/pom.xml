@@ -5,10 +5,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <artifactId>cloud-parent</artifactId>
+        <artifactId>cloud-engine-parent</artifactId>
         <groupId>org.example.parent</groupId>
         <version>1.0.0</version>
-        <relativePath>../../cloud-parent</relativePath>
+        <relativePath>../../cloud-engine-parent</relativePath>
     </parent>
     <packaging>jar</packaging>
     <groupId>com.example.common.redis</groupId>
@@ -29,7 +29,7 @@
         <dependency>
             <groupId>org.redisson</groupId>
             <artifactId>redisson</artifactId>
-            <version>3.15.6</version>
+            <version>${redisson.version}</version>
         </dependency>
 
     </dependencies>
