@@ -2,9 +2,7 @@ package com.redis.util;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
-import org.springframework.stereotype.Component;
 import org.springframework.util.CollectionUtils;
 
 import java.util.List;
@@ -14,7 +12,7 @@ import java.util.concurrent.TimeUnit;
 
 public class RedisUtil {
 
-    private static RedisTemplate<String, Object> redisTemplate;
+    public static RedisTemplate<String, Object> redisTemplate;
 
     private static final Logger logger = LoggerFactory.getLogger(RedisUtil.class);
 
@@ -59,7 +57,6 @@ public class RedisUtil {
         }
     }
 
-    // TODO: 2021/9/20
     /**
      * 删除缓存
      * @SuppressWarnings("unchecked") 忽略类型转换警告
@@ -72,7 +69,7 @@ public class RedisUtil {
                 redisTemplate.delete(key[0]);
             } else {
 //                传入一个 Collection<String> 集合
-                redisTemplate.delete(CollectionUtils.arrayToList(key));
+                redisTemplate.delete(RedisKey.generateKey(CollectionUtils.arrayToList(key)));
             }
         }
     }

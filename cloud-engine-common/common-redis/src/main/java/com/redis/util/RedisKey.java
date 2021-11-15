@@ -4,7 +4,7 @@ import com.redis.base.Flag;
 
 public interface RedisKey {
 
-    /**热门搜索隐藏关键字*/
+    /**测试*/
     String HOT_KEY = generateKey("test", "hot");
 
 

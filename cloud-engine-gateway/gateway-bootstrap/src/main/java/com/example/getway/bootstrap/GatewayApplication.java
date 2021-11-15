@@ -4,6 +4,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.ImportResource;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -21,12 +22,6 @@ public class GatewayApplication {
     public static void main(String[] args) {
         applicationContext = SpringApplication.run(GatewayApplication.class, args);
         logger.info("started up Gateway ");
-    }
-
-    @GetMapping("/log")
-    public String log(){
-        logger.info("log123123");
-        return "log";
     }
 
 }

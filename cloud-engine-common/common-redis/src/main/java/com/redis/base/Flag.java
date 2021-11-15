@@ -12,4 +12,7 @@ public interface Flag {
     String ANY = "*";
     /**匹配任意字符*/
     String MATCH_ANY = ".*";
+    /*分隔符*/
+    String SEMICOLON = ";";
+
 }

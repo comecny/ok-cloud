@@ -1,13 +1,21 @@
 package com.redis.config;
 
+import com.redis.base.Flag;
+import org.redisson.Redisson;
+import org.redisson.api.RedissonClient;
+import org.redisson.config.ClusterServersConfig;
+import org.redisson.config.Config;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.InitializingBean;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.serializer.Jackson2JsonRedisSerializer;
 import org.springframework.data.redis.serializer.StringRedisSerializer;
+
+import static com.redis.base.Flag.SEPARATOR;
 
 /**
  * redisconf配置类
@@ -37,4 +45,5 @@ public class RedisTemplateConfiguration implements ApplicationContextAware , Ini
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
         this.applicationContext = applicationContext;
     }
+
 }
