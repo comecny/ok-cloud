@@ -23,7 +23,7 @@
 
         <dependency>
             <groupId>com.example.user</groupId>
-            <artifactId>user-repository</artifactId>
+            <artifactId>user-persistence</artifactId>
             <version>1.0.0</version>
         </dependency>
 

@@ -24,7 +24,6 @@
         <module>cloud-engine-user</module>
         <module>cloud-engine-union</module>
         <module>cloud-engine-log</module>
-        <module>cloud-engine-es</module>
     </modules>
 
 </project>

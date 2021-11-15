@@ -23,7 +23,7 @@
 
         <dependency>
             <groupId>org.example.api</groupId>
-            <artifactId>cloud-api</artifactId>
+            <artifactId>cloud-engine-api</artifactId>
             <version>1.0.0</version>
         </dependency>
 
