@@ -1,6 +1,5 @@
 package com.example.core.utils;
 
-import com.example.core.dict.ErrorDict;
 import com.google.common.cache.Cache;
 import com.google.common.cache.CacheBuilder;
 
