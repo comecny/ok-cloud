@@ -22,10 +22,10 @@ monitorInterval：Log4j能够自动检测修改配置 文件和重新配置本�
             <ThresholdFilter level="info" onMatch="ACCEPT" onMismatch="DENY" />
         </console>
 
-      <!--  <Socket name="logstash" host="192.168.76.128" port="5602" protocol="TCP">
+        <Socket name="logstash" host="106.227.0.146" port="5047" protocol="TCP">
             <PatternLayout pattern="${PATTERN}" />
-            &lt;!&ndash;<JsonLayout properties="true"/>&ndash;&gt;
-        </Socket>-->
+            <!--<JsonLayout properties="true"/>-->
+        </Socket>
     </appenders>
 
 
