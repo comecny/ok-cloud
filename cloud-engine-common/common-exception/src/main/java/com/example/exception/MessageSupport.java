@@ -1,4 +1,4 @@
-package com.example.core.exception;
+package com.example.exception;
 
 public class MessageSupport implements Messageable{
 

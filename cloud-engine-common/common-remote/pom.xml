@@ -39,6 +39,12 @@
             <version>${spring-cloud.version}</version>
         </dependency>
 
+        <dependency>
+            <groupId>com.example.common</groupId>
+            <artifactId>common-exception</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+
     </dependencies>
 
 </project>

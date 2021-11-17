@@ -1,4 +1,4 @@
-package com.example.core.exception;
+package com.example.exception;
 
 public class RException extends Exception implements Messageable{
     private static final long serialVersionUID = 7158924729975437038L;

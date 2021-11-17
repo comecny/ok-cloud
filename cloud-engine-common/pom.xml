@@ -17,6 +17,7 @@
         <module>common-core</module>
         <module>common-db</module>
         <module>common-remote</module>
+        <module>common-exception</module>
     </modules>
 
     <build>

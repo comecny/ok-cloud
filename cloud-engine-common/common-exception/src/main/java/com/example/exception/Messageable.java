@@ -1,4 +1,4 @@
-package com.example.core.exception;
+package com.example.exception;
 
 import java.io.Serializable;
 
