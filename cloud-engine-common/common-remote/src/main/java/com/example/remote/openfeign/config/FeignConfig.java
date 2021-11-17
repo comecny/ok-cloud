@@ -1,7 +1,9 @@
 package com.example.remote.openfeign.config;
 
 import feign.Logger;
-import org.springframework.cloud.openfeign.FeignLoggerFactory;
+import feign.RequestInterceptor;
+import feign.codec.Decoder;
+import feign.codec.Encoder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -17,8 +19,13 @@ public class FeignConfig {
     }
 
     @Bean
-    FeignLoggerFactory feignCustomLoggerFactory() {
-        return new FeignLogger.FeignCustomLoggerFactory();
+    RequestInterceptor customFeignRequestInterceptor(){
+        return new FeignRequestInterceptor();
+    }
+
+    @Bean
+    Decoder customFeignEncoder(){
+        return new FeignDecoder();
     }
 
 }

@@ -11,5 +11,5 @@
     <import resource="classpath:/META-INF/idFactory.xml" />
 
     <!-- 扫包 -->
-    <context:component-scan base-package="com.example.remote.openfeign.config" />
+    <import resource="classpath:/META-INF/feignConfig.xml" />
 </beans>

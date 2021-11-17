@@ -18,6 +18,8 @@
         <module>common-db</module>
         <module>common-remote</module>
         <module>common-exception</module>
+        <module>common-log</module>
+        <module>common-utils</module>
     </modules>
 
     <build>

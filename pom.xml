@@ -23,7 +23,7 @@
         <module>cloud-engine-auth</module>
         <module>cloud-engine-user</module>
         <module>cloud-engine-union</module>
-        <module>cloud-engine-log</module>
+        <module>cloud-engine-common</module>
     </modules>
 
 </project>
