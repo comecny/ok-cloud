@@ -17,6 +17,7 @@
         <module>user-server</module>
         <module>user-service</module>
         <module>user-persistence</module>
+        <module>user-api</module>
     </modules>
 
 </project>

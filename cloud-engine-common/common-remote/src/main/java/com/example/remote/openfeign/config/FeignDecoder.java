@@ -18,7 +18,7 @@ public class FeignDecoder implements Decoder {
 
     private static final Logger logger = LoggerFactory.getLogger(FeignDecoder.class);
     @Override
-    public Object decode(Response response, Type type) throws IOException, DecodeException, FeignException {
+    public Object decode(Response response, Type type) throws IOException, FeignException {
         logger.info("fegin recv");
         return  Util.toString( response.body().asReader(Util.UTF_8));
     }

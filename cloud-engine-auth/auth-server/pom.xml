@@ -21,12 +21,5 @@
             <artifactId>auth-service</artifactId>
             <version>1.0.0</version>
         </dependency>
-
-        <dependency>
-            <groupId>org.example.api</groupId>
-            <artifactId>cloud-engine-api</artifactId>
-            <version>1.0.0</version>
-        </dependency>
-
     </dependencies>
 </project>

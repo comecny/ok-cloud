@@ -1,6 +1,6 @@
-package com.example.api.dto.user;
+package com.example.user.api.dto;
 
-import com.example.api.dto.HeadReq;
+import com.example.core.common.HeadReq;
 
 public class UserReq extends HeadReq {
 

@@ -1,7 +1,7 @@
-package com.example.api.service.user;
+package com.example.user.api.service;
 
-import com.example.api.dto.user.UserReq;
-import com.example.api.dto.user.UserResp;
+import com.example.user.api.dto.UserReq;
+import com.example.user.api.dto.UserResp;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
