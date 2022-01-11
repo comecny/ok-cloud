@@ -5,6 +5,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import lombok.Builder;
 import lombok.Data;
+import org.springframework.util.Assert;
 
 import java.io.*;
 import java.util.Properties;
@@ -23,6 +24,9 @@ public class FTPUtils {
      * @param ftpInfo ftp信息
      */
     public static void uploadFile(File file, String dir, FtpInfo ftpInfo) {
+        //非空校验
+        uploadAssert(ftpInfo);
+
         //获取sftp连接
         log.info("sftp文件上传开始 , 开启sftp连接 ... ");
         ChannelSftp channelSftp = getChannel(
@@ -50,6 +54,18 @@ public class FTPUtils {
             log.info("文件上传关闭sftp连接 ... ");
             closeChannel();
         }
+    }
+
+    /**
+     * 文件上传非空校验
+     * @param ftpInfo ftp配置信息
+     */
+    private static void uploadAssert(FtpInfo ftpInfo) {
+        Assert.notNull(ftpInfo.getHosts(),"hosts short ！");
+        Assert.notNull(ftpInfo.getFtpUserName(),"ftpUserName short ！");
+        Assert.notNull(ftpInfo.getPassword(),"password short ！");
+        Assert.notNull(ftpInfo.getPort(),"port short ！");
+        Assert.notNull(ftpInfo.getFileName(),"fileName short ！");
     }
 
     public static InputStream download(String path, FtpInfo ftpInfo){
@@ -123,7 +139,7 @@ public class FTPUtils {
      * @param port 端口号
      * @return ChannelSftp
      */
-    private static ChannelSftp getChannel(String hosts,String userName,String password,int port) {
+    private static ChannelSftp getChannel(String hosts,String userName,String password,Integer port) {
         JSch jsch = new JSch();
 
         try {
@@ -176,7 +192,7 @@ public class FTPUtils {
         private String hosts;
         private String ftpUserName;
         private String password;
-        private int port;
+        private Integer port;
         private String fileName;
         private String path;
     }
