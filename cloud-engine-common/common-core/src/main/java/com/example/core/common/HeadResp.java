@@ -1,7 +1,10 @@
 package com.example.core.common;
 
+import lombok.Data;
+
 import java.io.Serializable;
 
+@Data
 public abstract class HeadResp implements Serializable {
 
     private static final long serialVersionUID = -2651434529662567337L;

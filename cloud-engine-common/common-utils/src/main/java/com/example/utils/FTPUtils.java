@@ -188,7 +188,7 @@ public class FTPUtils {
      */
     @Data
     @Builder
-    static class FtpInfo{
+    public static class FtpInfo{
         private String hosts;
         private String ftpUserName;
         private String password;
@@ -197,41 +197,4 @@ public class FTPUtils {
         private String path;
     }
 
-    public static void main(String[] args) throws IOException {
-        FtpInfo ftpInfo = FtpInfo.builder()
-                .hosts("106.227.0.146")
-                .ftpUserName("root")
-                .fileName("test")
-                .password("liu2021Admin123!")
-                .port(22)
-                .path("/usr/local")
-                .build();
-
-        uploadFile(new File("C:\\Users\\81412\\Desktop\\文件\\脚本备份.txt"),"20220112",ftpInfo);
-
-        InputStream download = download("/usr/local/20220112", ftpInfo);
-
-        Reader reader = null;
-        Writer writer = new StringWriter();
-
-        try {
-            char[] buffer = new char[download.available()];
-            reader = new BufferedReader(new InputStreamReader(download,"UTF-8"));
-            int n;
-            while ((n = reader.read(buffer)) != -1) {
-                writer.write(buffer, 0, n);
-            }
-        } catch (Exception e) {
-            log.error(String.valueOf(e));
-        }finally {
-            reader.close();
-            writer.close();
-            download.close();
-        }
-
-        log.info("s");
-        String str = writer.toString();
-        log.info("转回来",str);
-
-    }
 }

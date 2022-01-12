@@ -5,9 +5,10 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * 请求拦截
+ * 请求拦截（发送前进行数据处理）
  */
 public class FeignRequestInterceptor implements RequestInterceptor {
+
     private static final Logger logger = LoggerFactory.getLogger(FeignRequestInterceptor.class);
     @Override
     public void apply(RequestTemplate template) {

@@ -23,6 +23,7 @@ public class RedisUtil {
      * @return true / false
      */
     public static boolean expire(String key, long time) {
+
         try {
             if (time > 0) {
                 redisTemplate.expire(key, time, TimeUnit.SECONDS);
@@ -62,7 +63,6 @@ public class RedisUtil {
      * @SuppressWarnings("unchecked") 忽略类型转换警告
      * @param key 键（一个或者多个）
      */
-    @SuppressWarnings("unchecked")
     public void delete(String... key) {
         if (key != null && key.length > 0) {
             if (key.length == 1) {
@@ -528,6 +528,6 @@ public class RedisUtil {
     }
 
     public void setRedisTemplate(RedisTemplate<String, Object> redisTemplate) {
-        this.redisTemplate = redisTemplate;
+        RedisUtil.redisTemplate = redisTemplate;
     }
 }
