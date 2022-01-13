@@ -3,13 +3,6 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:context="http://www.springframework.org/schema/context"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
-<!--
-    <bean name="redisTemplateConfiguration" class="com.redis.config.RedisTemplateConfiguration" />
-    <bean name="redisUtil" class="com.redis.util.RedisUtil" >
-        <property name="redisTemplate" ref="redisTemplate" />
-    </bean>-->
 
-    <context:component-scan base-package="com.redis.config" />
-    <context:component-scan base-package="com.redis.util" />
-
+    <bean class="com.example.core.common.MetricsDataInit" />
 </beans>

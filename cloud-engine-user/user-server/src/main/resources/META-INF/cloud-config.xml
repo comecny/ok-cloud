@@ -13,5 +13,8 @@
     <import resource="classpath:/META-INF/idFactory.xml" />
     <!-- 远程调用 -->
     <import resource="classpath:/META-INF/feignConfig.xml"/>
-
+    <!--redis-->
+    <import resource="classpath*:/META-INF/redisConfig.xml" />
+    <!-- 数据上报 -->
+    <import resource="classpath*:/META-INF/metrics.xml" />
 </beans>
