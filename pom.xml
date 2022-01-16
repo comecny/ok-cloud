@@ -22,6 +22,7 @@
         <module>cloud-engine-auth</module>
         <module>cloud-engine-user</module>
         <module>cloud-engine-union</module>
+        <module>cloud-engine-console-web</module>
     </modules>
 
 </project>

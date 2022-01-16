@@ -40,6 +40,8 @@
         <commons-pool2.version>2.11.1</commons-pool2.version>
         <sentinel-csp.version>1.8.0</sentinel-csp.version>
         <spring.version>5.2.8.RELEASE</spring.version>
+        <micrometer-elastic.version>1.8.2</micrometer-elastic.version>
+        <postgresql-driver.version>42.3.1</postgresql-driver.version>
 
     </properties>
 

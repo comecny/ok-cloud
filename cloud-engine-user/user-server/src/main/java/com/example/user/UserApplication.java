@@ -8,9 +8,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.ComponentScans;
 import org.springframework.context.annotation.ImportResource;
-import org.springframework.scheduling.annotation.EnableScheduling;
 
-@EnableScheduling
 @Log4j2
 @ComponentScans(value = {
         @ComponentScan(value = "com.example.user.*")}
