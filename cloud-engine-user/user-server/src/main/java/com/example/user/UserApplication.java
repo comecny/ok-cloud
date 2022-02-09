@@ -24,5 +24,4 @@ public class UserApplication {
         applicationContext =  SpringApplication.run(UserApplication.class, args);
         log.info("UserApplication success ! ");
     }
-
 }
